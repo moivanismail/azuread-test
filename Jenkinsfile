@@ -14,8 +14,8 @@ pipeline {
                         docker stop expresswebapp-staging
                         docker rm expresswebapp-staging
                     fi
-                    sudo docker build -t expresswebapp-staging .
-                    sudo docker run -d -p 8001:3000 --restart=on-failure:10 --name expresswebapp-staging expresswebapp-staging
+                    docker build -t expresswebapp-staging .
+                    docker run -d -p 8001:3000 --restart=on-failure:10 --name expresswebapp-staging expresswebapp-staging
                 '''
                 
             }
