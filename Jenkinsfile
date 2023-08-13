@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'master' }
+    agent { label 'Build-In Node' }
     stages {
         stage('Build and deploy for prooduction') {
             when {
